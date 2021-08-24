@@ -1,0 +1,29 @@
+.pages {
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+    }
+
+    &__item {
+        font-size: 1.6rem;
+
+        line-height: 1.9rem;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        border: 1px solid transparent;
+        color: $primary-color;
+        transition: all 0.3s;
+
+        &:hover,
+        &:focus {
+            border-bottom-color: $primary-color;
+        }
+    }
+}

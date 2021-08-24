@@ -1,0 +1,73 @@
+.floors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0 5rem;
+
+    &__title {
+        font-family: 'Bebas Neue';
+        font-size: 3.7rem;
+        line-height: 4.4rem;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 6.8rem; // 122 all - 54 home img
+    }
+
+    &__button {
+        background-color: $secondary-color;
+        color: $light-color;
+        border-radius: 0.6rem;
+        padding: 1.6rem 3.6rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        border: 0;
+        outline: 0;
+        margin-bottom: 6.7rem;
+
+        &:hover,
+        &:focus {
+            background-color: lighten($secondary-color, 10%);
+        }
+    }
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__btn {
+        background: transparent;
+        transition: all 0.3s;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+
+        &-down {
+            transform: rotateX(180deg);
+        }
+
+        &:hover,
+        &:focus {
+            opacity: 0.65;
+        }
+    }
+
+    // for opacity hover fix
+    .counter__btn-hidden {
+        opacity: 0;
+        cursor: default;
+    }
+
+    &__number {
+        font-family: 'Bebas Neue';
+        color: $primary-color;
+        padding: 3.5rem 0;
+        font-size: 9.5rem;
+        font-weight: bold;
+    }
+}

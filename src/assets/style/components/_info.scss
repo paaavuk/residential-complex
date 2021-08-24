@@ -1,0 +1,40 @@
+.info {
+    display: flex;
+    align-items: center;
+
+    &__logo {
+        margin-right: 3.7rem;
+    }
+}
+
+.call {
+    margin-right: 5.25rem;
+    color: $primary-color;
+
+    &__p {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+    }
+
+    &__tel {
+        font-weight: bold;
+        font-size: 1.7rem;
+        line-height: 2rem;
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.social {
+    display: flex;
+
+    &__icon {
+        margin: 0 0.75rem;
+        transition: all 0.3s;
+
+        &:hover,
+        &:focus {
+            opacity: 0.6;
+        }
+    }
+}

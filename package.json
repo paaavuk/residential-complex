@@ -1,0 +1,14 @@
+{
+    "name": "melody",
+    "version": "1.0.0",
+    "main": "./src/assets/js/main.js",
+    "license": "MIT",
+    "scripts": {
+        "dev": "parcel serve ./src/index.html --open",
+        "build": "parcel build ./src/index.html"
+    },
+    "devDependencies": {
+        "@parcel/transformer-image": "2.0.0-rc.0",
+        "@parcel/transformer-sass": "2.0.0-rc.0"
+    }
+}
